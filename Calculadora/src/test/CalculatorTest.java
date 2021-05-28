@@ -30,4 +30,16 @@ public class CalculatorTest {
 		//assert
 		Assert.assertEquals(expectedResult, realResult);
 	}
+	
+	@Test
+	public void testSubstract() {
+		//arrange
+		int firstNumber = 3;
+		int secondNumber = 1;
+		int expectedResult = 2;
+		//act
+		int realResult = calculator.substract(firstNumber, secondNumber);
+		//assert
+		Assert.assertEquals(expectedResult, realResult);
+	}
 }
