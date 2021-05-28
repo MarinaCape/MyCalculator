@@ -54,4 +54,16 @@ public class CalculatorTest {
 		//assert
 		Assert.assertEquals(expectedResult, realResult);
 	}
+	
+	@Test
+	public void testDivide() {
+		//arrange
+		int firstNumber = 10;
+		int secondNumber = 2;
+		int expectedResult = 5;
+		//act
+		int realResult = calculator.divide(firstNumber, secondNumber);
+		//assert
+		Assert.assertEquals(expectedResult, realResult);
+	}
 }
