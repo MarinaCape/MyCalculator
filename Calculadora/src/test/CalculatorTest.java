@@ -66,4 +66,15 @@ public class CalculatorTest {
 		//assert
 		Assert.assertEquals(expectedResult, realResult);
 	}
+	
+	@Test
+	public void testSqrt() {
+		//arrange
+		int number = 10;
+		double expectedResult = 3.1622776601683793319988935444327;
+		//act
+		double realResult = calculator.sqrt(number);
+		//assert
+		Assert.assertTrue(expectedResult - realResult < 0.00001);
+	}
 }
