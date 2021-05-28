@@ -20,4 +20,19 @@ public class Calculator {
 		return firstNumber / secondNumber;
 	}
 	
+	public double sqrt(int number) {
+		//temporary variable  
+		double temp;  
+		double sqrtroot = number/2;  
+		
+		do {  
+			temp = sqrtroot;  
+			sqrtroot = (temp+(number/temp))/2; 
+			
+		} while((temp-sqrtroot)!= 0);  
+		
+		return sqrtroot;  
+		 
+	}
+	
 }
