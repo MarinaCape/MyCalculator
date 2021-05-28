@@ -42,4 +42,16 @@ public class CalculatorTest {
 		//assert
 		Assert.assertEquals(expectedResult, realResult);
 	}
+	
+	@Test
+	public void testMultiply() {
+		//arrange
+		int firstNumber = 3;
+		int secondNumber = 6;
+		int expectedResult = 18;
+		//act
+		int realResult = calculator.multiply(firstNumber, secondNumber);
+		//assert
+		Assert.assertEquals(expectedResult, realResult);
+	}
 }
